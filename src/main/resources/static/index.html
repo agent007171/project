@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример страницы</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="center-content">
+        <h1>Привет!</h1>
+        <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
+        <button type="button" onclick="submitPhoneNumber()">Отправить</button>
+    </div>
+
+    <!-- Всплывающее окно -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>Спасибо!</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

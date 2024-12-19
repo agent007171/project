@@ -1,0 +1,85 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Добавим фон для контраста */
+}
+
+.center-content {
+    text-align: center;
+    background: white; /* Фон для центрального блока */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="tel"] {
+    width: 100%; /* Растянем поле ввода на всю ширину контейнера */
+    max-width: 300px; /* Максимальная ширина */
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Учитываем padding и border в ширине */
+}
+
+button {
+    width: 100%; /* Растянем кнопку на всю ширину контейнера */
+    max-width: 300px; /* Максимальная ширина */
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px; /* Скруглим кнопку */
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для всплывающего окна */
+.popup {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
